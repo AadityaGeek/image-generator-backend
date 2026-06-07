@@ -25,7 +25,7 @@ app.post('/generate', async (req, res) => {
     
     try {
         const response = await fetch(
-            `https://api-inference.huggingface.co/models/${model}`,
+            `https://router.huggingface.co/hf-inference/models/${model}`,
             {
                 headers: {
                     Authorization: `Bearer ${randomApiKey}`,
